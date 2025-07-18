@@ -1,8 +1,7 @@
 close all;clc;clear;
 %% Load workspace;
 % Load NVC and non-NVC vessel diameter dynamics, ID of vessels, for CBF simulation of LPC intensities;
-load('2024_workspace_CBFmodeling_LPCintensity.mat');
-% load('../data/2024_workspace_CBFmodeling_LPCintensity.mat');
+load('2025_workspace_CBFmodeling_LPCintensity.mat');
 %% Plot of LPC vessel dynamics, under different LC-NE activity intensities;
 colorlist=[[0.0863,0.5216,0.4392];[0.10,0.84,0.73];[1.00,0.30,0.00];[1.00,0.67,0.39];[0.6471,0.1490,0.3922];[0.9216,0.4980,0.6863]];
 t=-49:200;
@@ -278,8 +277,8 @@ ax.Color='none';ax.LineWidth=1.5;ax.TickDir='in';ax.FontSize=12;
 ax.XTick=1:1:group_num;ax.Title.FontWeight='bold';
 ax.Title.FontSize=18;ax.YDir='normal';box off;
 ax.YTick=0:20:120;ax.YLim=[0,120];
-ylabel('Peak (%)','FontName','Arial','Fontsize',16);box off %ÑªÁ÷Ôö¼ÓµÄ×î´ó·ùÖµ;
-plot([1.1,1.9],[70,70],'Color',[0,0,0],'LineWidth',1.5);% Ìí¼ÓÏÔÖøĞÔ±êÖ¾
+ylabel('Peak (%)','FontName','Arial','Fontsize',16);box off %è¡€æµå¢åŠ çš„æœ€å¤§å¹…å€¼;
+plot([1.1,1.9],[70,70],'Color',[0,0,0],'LineWidth',1.5);% æ·»åŠ æ˜¾è‘—æ€§æ ‡å¿—
 plot([2.1,2.9],[70,70],'Color',[0,0,0],'LineWidth',1.5);
 plot([3.1,3.9],[70,70],'Color',[0,0,0],'LineWidth',1.5);
 text(1.5,75,num2str(p1(1)),'FontSize',12,'HorizontalAlignment','center','FontWeight','normal');
@@ -311,8 +310,8 @@ ax.Color='none';ax.LineWidth=1.5;ax.TickDir='in';ax.FontSize=12;
 ax.XTick=1:1:group_num;ax.Title.FontWeight='bold';
 ax.Title.FontSize=18;ax.YDir='normal';box off;
 ax.YTick=0:50:300;ax.YLim=[0,200];
-ylabel('FWHM (s)','FontName','Arial','Fontsize',16);box off %ÔÚÀú´ÎeventÖĞ£¬ÓĞ¶à´ó¸ÅÂÊÓĞÏìÓ¦;
-plot([1.1,1.9],[160,160],'Color',[0,0,0],'LineWidth',1.5);% Ìí¼ÓÏÔÖøĞÔ±êÖ¾
+ylabel('FWHM (s)','FontName','Arial','Fontsize',16);box off %åœ¨å†æ¬¡eventä¸­ï¼Œæœ‰å¤šå¤§æ¦‚ç‡æœ‰å“åº”;
+plot([1.1,1.9],[160,160],'Color',[0,0,0],'LineWidth',1.5);% æ·»åŠ æ˜¾è‘—æ€§æ ‡å¿—
 plot([2.1,2.9],[160,160],'Color',[0,0,0],'LineWidth',1.5);
 plot([3.1,3.9],[160,160],'Color',[0,0,0],'LineWidth',1.5);
 text(1.5,167,num2str(p1(1)),'FontSize',12,'HorizontalAlignment','center','FontWeight','normal');
@@ -343,8 +342,8 @@ ax.Color='none';ax.LineWidth=1.5;ax.TickDir='in';ax.FontSize=12;
 ax.XTick=1:1:group_num;ax.Title.FontWeight='bold';
 ax.Title.FontSize=18;ax.YDir='normal';box off;
 ax.YTick=-20:20:100;ax.YLim=[0,100];
-ylabel('Total flow (AUC)','FontName','Arial','Fontsize',16);box off %ÔÚÀú´ÎeventÖĞ£¬ÓĞ¶à´ó¸ÅÂÊÓĞÏìÓ¦;
-plot([1.1,1.9],[80,80],'Color',[0,0,0],'LineWidth',1.5);% Ìí¼ÓÏÔÖøĞÔ±êÖ¾
+ylabel('Total flow (AUC)','FontName','Arial','Fontsize',16);box off %åœ¨å†æ¬¡eventä¸­ï¼Œæœ‰å¤šå¤§æ¦‚ç‡æœ‰å“åº”;
+plot([1.1,1.9],[80,80],'Color',[0,0,0],'LineWidth',1.5);% æ·»åŠ æ˜¾è‘—æ€§æ ‡å¿—
 plot([2.1,2.9],[80,80],'Color',[0,0,0],'LineWidth',1.5);
 plot([3.1,3.9],[80,80],'Color',[0,0,0],'LineWidth',1.5);
 text(1.5,83,num2str(p1(1)),'FontSize',12,'HorizontalAlignment','center','FontWeight','normal');
