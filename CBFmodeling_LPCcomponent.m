@@ -1,7 +1,7 @@
 clear all;close all;clc
 %% Load workspace;
 % Load NVC and non-NVC vessel diameter dynamics, ID of vessels, for CBF simulation of LPC components;
-load('2025_workspace_CBFmodeling.mat');
+load('2025_workspace_CBFmodeling_LPCcomponent.mat');
 %% CBF simulation for the contribution of direct of indirect LPC to blood flow regulation;
 % NVC_art_group;NVC_cap_group;% ID of NVC vessels in each simulation;
 vesselnum=length(vessel_radii);
